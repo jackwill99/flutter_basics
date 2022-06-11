@@ -18,7 +18,7 @@ Where you want to return a value back to the parent or give a parameter, you wil
 
 ```dart
 class Test {
-  Function(x) fCall;
+  Function(int) fCall;
   Test(this.fCall);
 }
 
