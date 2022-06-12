@@ -45,5 +45,41 @@ So we use spread operator
 final -> Initial state, we don't define it's value. After first time in run time, we define it's value and we can't change it later.
 const -> It's value is constant and can never change.
          
+## Getter & Setter
+Getter and setter methods are the class methods used to manipulate the data of the class fields. Getter is used to read or get the data of the class field whereas setter is used to set the data of the class field to some variable.
 
+```dart
+// Creating Class named Test
+class Test {
+  // Creating a Field/Property
+  String name;
+
+  // Creating the getter method
+  // to get input from Field/Property
+  String get getName {
+  	return name;
+  }
+
+  // Creating the setter method
+  // to set the input in Field/Property
+  set setName(String str) {
+  	name = str;
+  }
+}
+
+void main() {
+  // Creating Instance of class
+  Test t1 = Test();
+
+  // Calling the set_name method(setter method we created)
+  // To set the value in Property "name"
+  t1  = "GeeksForGeeks";
+
+  // Calling the get_name method(getter method we created)
+  // To get the value from Property "name"
+  print("Welcome to ${t1.getName}");
+}
+
+
+```
 
